@@ -72,7 +72,8 @@ const observerCallback = (entries) => {
   const [entry] = entries;
   if (!entry.isIntersecting) {
     nevbar.classList.add("fixed");
-    navBarParent.style.height = "75px";
+    const height = nevbar.offsetHeight;
+    navBarParent.style.height = `${height}px`;
   } else {
     nevbar.classList.remove("fixed");
     navBarParent.style.height = "auto";

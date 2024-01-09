@@ -408,8 +408,8 @@ main {
 .show__less_btn {
   cursor: pointer;
   color: var(--color-main);
-  text-decoration: underline;
   display: none;
+  text-align: center;
 }
 
 .details__text > b {
