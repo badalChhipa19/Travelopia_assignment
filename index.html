@@ -1,14 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Europe Tours | Trips to Europe | Adventure Holidays Europe | Exodus</title>
-  <link rel="icon" href="https://res.cloudinary.com/enchanting/q_70,f_auto,w_32,h_32,c_fit/exodus-web/2023/10/cropped-favicon.png" />
-</head>
-<body>
-  
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Europe Tours | Trips to Europe | Adventure Holidays Europe | Exodus
+    </title>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/enchanting/q_70,f_auto,w_32,h_32,c_fit/exodus-web/2023/10/cropped-favicon.png"
+    />
 
-<!-- IMAGE - https://res.cloudinary.com/enchanting/q_80,f_auto,c_lfill,w_360,h_270,g_auto/exodus-web/2022/05/hero_europe_destination_page_v3.png -->
+    <!-- Icon pack files -> https://ionic.io/ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header__top">
+        <p class="header__top_text">
+          Request your free brochure for adventure inspiration.
+          <a href="#" class="link link__info">Order Now &rarr;</a>
+        </p>
+        <div class="header__top_link_box">
+          <div class="header__top_content">
+            <ion-icon class="account__icon icon" name="person"></ion-icon>
+            <p class="content__text">Account</p>
+            <span class="content__arrow"
+              ><ion-icon
+                class="content__arrow_icon icon"
+                name="chevron-down"
+              ></ion-icon
+            ></span>
+          </div>
+          <nav class="header__top_links hidden">
+            <ul class="list header__top_list">
+              <li class="item header__top_item">
+                <a href="" class="link header__top_link">My Account</a>
+              </li>
+              <li class="item header__top_item">
+                <a href="" class="link header__top_link">My Booking</a>
+              </li>
+              <li class="item header__top_item">
+                <a href="" class="link header__top_link">Agents</a>
+              </li>
+              <li class="item header__top_item">
+                <a href="" class="link header__top_link">Need Help?</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header__down_box">
+        <div class="header__down">
+          <div class="header__container">
+            <div class="header__logo_box">
+              <svg
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 101.56 31.95"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #496161;
+                    }
+                    .cls-1,
+                    .cls-2,
+                    .cls-3 {
+                      stroke-width: 0;
+                    }
+                    .cls-2 {
+                      fill: #4a6262;
+                    }
+                    .cls-3 {
+                      fill: #1298ad;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="cls-1"
+                  d="M95.77 21.71c1.18 0 2.23-.21 3.13-.61.95-.43 1.67-1.11 2.14-2.01.29-.61.46-1.35.51-2.22v-.04c0-1.13-.31-2.06-.92-2.77l-.02-.02c-.57-.65-1.2-1.13-1.9-1.43-.64-.28-1.51-.58-2.6-.92-.77-.22-1.35-.43-1.74-.63-.24-.12-.37-.28-.4-.5-.05-.48.12-.66.31-.79.35-.24.82-.36 1.38-.36.53 0 1.07.1 1.53.36.34.19.61.49.8.83s.24.81.69.92c.17.04.34 0 .49-.08l1.86-1.05c.27-.15.4-.46.33-.76-.27-1.15-.91-2.09-1.88-2.77-.96-.68-2.18-1.02-3.6-1.02-1.31 0-2.46.21-3.41.63-1.02.45-1.73 1.14-2.12 2.05-.29.66-.44 1.29-.44 1.89 0 1.12.28 2.04.84 2.73.53.66 1.19 1.17 1.96 1.51.71.31 1.65.63 2.79.94.71.19 1.29.41 1.72.65.19.11.39.28.39.75 0 .36-.12.6-.4.78-.36.23-.89.35-1.6.35-.81 0-1.4-.16-1.77-.48-.4-.36-.71-.8-.9-1.32-.06-.17-.2-.31-.37-.38-.17-.07-.37-.05-.53.03l-2.06 1.1c-.28.15-.42.48-.34.79.35 1.27 1.07 2.25 2.15 2.91 1.05.64 2.39.96 3.99.96Z"
+                ></path>
+                <path
+                  class="cls-3"
+                  d="M30.01 12.62c.33.33.86.33 1.19 0l3.17-3.17c.23-.23.36-.55.36-.88V5.85c0-.46-.38-.84-.84-.84h-2.75c-.33 0-.65.13-.88.37l-3.15 3.15c-.33.33-.33.86 0 1.19l2.9 2.9ZM34.31 18.43 21.32 5.47s-.04-.03-.06-.05c-.23-.23-.55-.37-.88-.37h-2.75c-.46 0-.84.37-.84.84v2.72c0 .33.13.65.36.88l3.41 3.42s.1.09.16.12l1.02 1.01-4.41 4.34c-.24.23-.37.55-.37.89v2.71c0 .47.38.84.84.84h2.75c.33 0 .64-.13.87-.36l4.42-4.34.85.84c.03.05.07.1.11.14l3.4 3.4c.23.23.55.36.88.36h2.75c.46 0 .84-.37.84-.84V19.3c0-.33-.13-.65-.36-.88Z"
+                ></path>
+                <path
+                  class="cls-2"
+                  d="M1.59 31.86H.52l2.32-4.6h.04l2.33 4.6H4.14l-.39-.8H1.96l-.37.8Zm.68-1.48h1.17c-.27-.58-.46-1.02-.58-1.35l-.25.57c-.17.39-.28.65-.35.78ZM9.25 31.86H7.71v-4.53h1.53c.81 0 1.45.21 1.93.63.48.42.73.97.73 1.64s-.24 1.22-.73 1.64c-.47.42-1.11.63-1.92.63Zm-.03-3.72h-.49v2.91h.51c.5 0 .89-.14 1.19-.41.29-.27.44-.62.44-1.05s-.15-.77-.45-1.04c-.29-.28-.69-.42-1.2-.42ZM17.47 27.33h1.11l-2.35 4.6h-.04l-2.36-4.6h1.12l.63 1.31c.35.75.56 1.22.63 1.41.22-.5.43-.97.64-1.41l.63-1.31ZM24.21 31.05v.81h-3.18v-4.53h3.08v.81h-2.05v1.03h1.74v.78h-1.74v1.1h2.15ZM30.92 27.33v4.6h-.03l-2.63-2.39-.31-.26v2.58h-1v-4.6h.04l2.62 2.39.31.26v-2.58h1.01ZM37.22 27.33v.81h-1.34v3.72h-1.02v-3.72h-1.34v-.81h3.7ZM42.73 27.33h1.02v2.88c0 .53-.18.96-.53 1.27-.35.31-.84.47-1.47.47s-1.12-.16-1.47-.47c-.35-.31-.53-.74-.53-1.27v-2.88h1.02v2.79c0 .3.09.53.26.7.17.17.41.25.72.25s.56-.08.72-.25.25-.4.25-.7v-2.79ZM46.73 31.86v-4.53h1.68c.57 0 1.02.13 1.35.39s.5.63.5 1.1c0 .31-.08.57-.24.8s-.38.39-.67.49l1 1.75h-1.08l-.84-1.59h-.69v1.59h-1Zm1.71-3.72h-.7v1.35h.73c.24 0 .43-.06.56-.17.13-.12.2-.28.2-.5s-.07-.39-.21-.5-.33-.18-.58-.18ZM56.26 31.05v.81h-3.18v-4.53h3.08v.81h-2.05v1.03h1.74v.78h-1.74v1.1h2.15ZM65.43 27.33v.81h-1.34v3.72h-1.02v-3.72h-1.34v-.81h3.7ZM68.03 31.86v-4.53h1.68c.57 0 1.02.13 1.35.39s.5.63.5 1.1c0 .31-.08.57-.24.8s-.38.39-.67.49l1 1.75h-1.08l-.84-1.59h-.69v1.59h-1Zm1.71-3.72h-.7v1.35h.73c.24 0 .43-.06.56-.17.13-.12.2-.28.2-.5s-.07-.39-.21-.5-.33-.18-.58-.18ZM74.89 31.86h-1.07l2.32-4.6h.04l2.33 4.6h-1.07l-.39-.8h-1.79l-.37.8Zm.68-1.48h1.17c-.27-.58-.46-1.02-.58-1.35l-.25.57c-.17.39-.28.65-.35.78ZM83.31 27.33h1.11l-2.35 4.6h-.04l-2.36-4.6h1.12l.63 1.31c.35.75.56 1.22.63 1.41.22-.5.43-.97.65-1.41l.63-1.31ZM90.05 31.05v.81h-3.18v-4.53h3.08v.81H87.9v1.03h1.74v.78H87.9v1.1h2.15ZM95.65 31.05v.81h-2.87v-4.53h1.02v3.72h1.84ZM99.5 31.95c-.53 0-1.01-.09-1.42-.26v-.93c.39.19.79.3 1.2.33.17 0 .31 0 .43-.03.39-.05.58-.19.58-.4 0-.14-.07-.26-.2-.35-.14-.1-.38-.21-.74-.33-.45-.16-.79-.34-1.01-.55-.21-.21-.32-.49-.32-.86 0-.4.16-.72.48-.96.31-.24.73-.37 1.26-.37.47 0 .89.08 1.25.23v.89c-.33-.18-.72-.28-1.17-.28-.25 0-.45.04-.59.13-.15.09-.22.2-.22.34 0 .13.07.25.21.35s.37.21.7.33c.47.17.81.36 1.02.57.22.2.33.48.33.84 0 .41-.16.73-.47.96-.31.23-.75.35-1.31.35Z"
+                ></path>
+                <path
+                  class="cls-1"
+                  d="M12.06 6.85c-1.16-.67-2.52-1.01-4.04-1.01s-2.9.34-4.11 1.02c-1.21.68-2.17 1.63-2.87 2.83C.35 10.88 0 12.26 0 13.78s.35 2.9 1.04 4.09c.69 1.2 1.66 2.15 2.87 2.83 1.21.68 2.59 1.02 4.1 1.02 1.37 0 2.65-.21 3.83-.63 1.19-.42 2.17-.98 2.93-1.66.13-.12.21-.28.21-.46s-.06-.34-.18-.47l-1.95-1.99c-.24-.25-.63-.25-.88-.02-.59.53-1.21.89-1.82 1.06-.66.18-1.37.27-2.13.27-.96 0-1.75-.27-2.4-.82-.22-.19-.42-.4-.58-.63-.11-.15-.15-.34-.09-.51.08-.21.27-.35.49-.35h9.61c.33 0 .61-.25.64-.58.05-.49.07-.87.07-1.17 0-1.51-.32-2.89-.96-4.09-.64-1.21-1.56-2.17-2.73-2.84Zm-1.11 4.97c-.1.14-.27.21-.44.21H5.43c-.22 0-.41-.13-.49-.35-.06-.17-.02-.36.09-.51.17-.23.36-.44.58-.63.65-.55 1.44-.82 2.4-.82s1.73.27 2.36.82c.24.21.44.45.61.71.11.17.1.4-.03.57ZM48.25 6.86c-1.23-.68-2.62-1.02-4.13-1.02s-2.91.34-4.13 1.02c-1.23.68-2.21 1.63-2.91 2.83-.69 1.19-1.04 2.57-1.04 4.09s.35 2.9 1.04 4.09c.69 1.2 1.67 2.15 2.91 2.83 1.23.68 2.62 1.02 4.13 1.02s2.91-.34 4.13-1.02c1.23-.68 2.22-1.63 2.92-2.83.7-1.2 1.06-2.58 1.06-4.1s-.36-2.9-1.06-4.1c-.71-1.2-1.69-2.15-2.92-2.83Zm-1.36 9.85c-.74.76-1.65 1.13-2.77 1.13s-2.03-.37-2.75-1.12c-.73-.76-1.09-1.72-1.09-2.93s.36-2.16 1.09-2.93c.73-.76 1.63-1.12 2.75-1.12s2.04.37 2.77 1.13c.74.76 1.1 1.72 1.1 2.93s-.36 2.16-1.1 2.93ZM69.49 0H66.9c-.46 0-.82.37-.82.82V6.7c0 .15-.08.28-.21.34-.13.07-.29.06-.42-.03-.17-.12-.35-.24-.54-.34-.98-.55-2.1-.83-3.34-.83-1.41 0-2.71.35-3.86 1.03s-2.07 1.64-2.74 2.85c-.66 1.2-1 2.57-1 4.07s.34 2.86 1 4.07c.67 1.21 1.59 2.17 2.74 2.85 1.15.68 2.45 1.03 3.86 1.03 1.24 0 2.37-.28 3.34-.83.19-.11.37-.22.54-.34.12-.09.28-.1.42-.03.14.07.21.21.21.37-.01.28.24.49.51.49h2.74c.54 0 .98-.44.98-.98V.82c0-.46-.37-.82-.82-.82Zm-4.55 16.69c-.76.77-1.67 1.15-2.78 1.15-.73 0-1.37-.17-1.97-.52-.6-.35-1.08-.83-1.44-1.44-.36-.6-.54-1.31-.54-2.09s.18-1.48.54-2.09c.36-.62.84-1.09 1.44-1.44.6-.35 1.25-.52 1.97-.52 1.11 0 2.01.38 2.78 1.15.76.78 1.14 1.73 1.14 2.91s-.37 2.13-1.14 2.91ZM87.04 7.14c0-.65-.52-1.17-1.16-1.17h-1.93c-.64 0-1.15.53-1.15 1.17v8.04c0 .77-.26 1.41-.79 1.95s-1.15.8-1.91.8-1.35-.26-1.88-.8c-.53-.54-.79-1.17-.79-1.94V7.05c0-.6-.48-1.08-1.07-1.08h-2.1c-.59 0-1.07.49-1.07 1.08v8.66c0 1.1.27 2.13.8 3.05.57.99 1.38 1.77 2.39 2.32.76.41 1.6.64 2.46.69h.31c.17 0 .34-.01.51-.03 0 0 .16-.02.17-.02.64-.14 1.24-.36 1.79-.67.19-.11.37-.22.54-.34.12-.09.28-.1.42-.03.14.07.21.21.21.37-.01.28.24.49.51.49h2.74c.54 0 .98-.44.98-.98V7.14Z"
+                ></path>
+              </svg>
+            </div>
+            <nav class="header__links_box">
+              <ul class="list header__links_list">
+                <li class="item header__link_item">
+                  <a class="link header__link" href="">Destinations</a>
+                </li>
+                <li class="item header__link_item">
+                  <a class="link header__link" href=""> Activities </a>
+                </li>
+                <li class="item header__link_item">
+                  <a class="link header__link" href="">Ways to Travel </a>
+                </li>
+                <li class="item header__link_item">
+                  <a class="link header__link" href=""> Offers </a>
+                </li>
+                <li class="item header__link_item">
+                  <a class="link header__link" href="">Late Getaways </a>
+                </li>
+                <li class="item header__link_item">
+                  <a class="link header__link" href="">Sustainable Travel</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="header__action_links">
+              <ion-icon
+                class="icon search__icon"
+                name="search-outline"
+              ></ion-icon>
+              <ion-icon
+                class="icon heart__icon"
+                name="heart-outline"
+              ></ion-icon>
+            </nav>
+
+            <nav class="header__extra_links">
+              <a
+                class="link header__extra__link link__tel"
+                href="tel:02039932193"
+                >02039932193
+                <ion-icon class="tel__icon" name="call-outline"></ion-icon>
+              </a>
+              <a class="link header__extra__link link__contact" href=""
+                >Contact</a
+              >
+              <div class="country__selection_box">
+                <div class="current">
+                  <img
+                    class="img__country"
+                    src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+                    alt="Country flag"
+                  />
+                  <ion-icon
+                    class="country__arrow_icon icon"
+                    name="chevron-down"
+                  ></ion-icon>
+                </div>
+                <ul class="list list__country hidden"></ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="features__content">
+        <img
+          src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2022/05/trustpilot_brandmark_teal-rgb.png"
+          alt="Trustpilot Rated Excellent"
+        />
+        <p class="features__text">
+          <span>Trustpilot</span><br /><span>Rated Excellent</span>
+        </p>
+        <abbr
+          title="We are proud to say that we score 4.8 out of 5 for our Trustpilot customer reviews."
+        >
+          <ion-icon
+            class="icon icon__information"
+            name="information-circle-outline"
+          ></ion-icon
+        ></abbr>
+      </div>
+      <div class="features__content">
+        <img
+          src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2023/05/MicrosoftTeams-image-179.png"
+          alt="Refund Guarantee"
+        />
+        <p class="features__text">
+          <span>Refund</span><br /><span>Guarantee</span>
+        </p>
+        <abbr title="We will refund you if we cancel your trip for any reson."
+          ><ion-icon
+            class="icon icon__information"
+            name="information-circle-outline"
+          ></ion-icon
+        ></abbr>
+      </div>
+      <div class="features__content">
+        <img
+          src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2023/05/MicrosoftTeams-image-180.png"
+          alt="Flexible Bookings"
+        />
+        <p class="features__text">
+          <span>Flexible</span><br /><span>Booking</span>
+        </p>
+        <abbr title="Refund guarantee and full financial protection."
+          ><ion-icon
+            class="icon icon__information"
+            name="information-circle-outline"
+          ></ion-icon
+        ></abbr>
+      </div>
+      <div class="features__content">
+        <img
+          src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_40,h_40,c_lfill,g_auto/exodus-web/2023/02/leader-icon-usp.png"
+          alt="Expert Local Guides"
+        />
+        <p class="features__text">
+          <span>Expert Local</span><br /><span>Guides</span>
+        </p>
+        <abbr
+          title="The best guides in the business. Awarded GOLD by Wanderlust."
+          ><ion-icon
+            class="icon icon__information"
+            name="information-circle-outline"
+          ></ion-icon
+        ></abbr>
+      </div>
+    </section>
+
+    <main>
+      <img
+        class="img__label"
+        src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_2048,h_90,c_fit/exodus-web/2023/12/EX-TBZR-ribbon-UK-2.png"
+        alt=""
+      />
+      <div class="hero">
+        <img
+          class="img__hero"
+          src="https://res.cloudinary.com/enchanting/q_80,f_auto,c_lfill,w_1920,h_400,g_auto/exodus-web/2022/05/hero_europe_destination_page_v3.png"
+          alt=""
+        />
+        <div class="hero__content">
+          <h1 class="heading__primary">Europe Tours</h1>
+          <p class="heor__text">
+            An outdoor playground filled with fairytale castles, fascinating
+            cities and ancient traditions
+          </p>
+        </div>
+      </div>
+      <p class="hero__bottom_text">
+        2024 Trailblazer Event: Book Today and Enjoy Great Savings!
+        <a href="#" class="hero__link">View more here.</a>
+      </p>
+    </main>
+
+    <section class="details">
+      <div class="details__nav">
+        <p class="dummy_link">Home</p>
+        &rarr;
+        <p class="dummy__page">Europe</p>
+      </div>
+      <div class="details__container">
+        <div class="details__content">
+          <h2 class="heading__secondary">Discover our Europe tours</h2>
+          <p class="details__text">
+            Adventure awaits, right on your doorstep! With so many cultures and
+            countries just a short flight away, our unique Europe tours offer
+            far more than you could imagine.
+            <br /><br />
+            From glorious summers spent relaxing on beaches or exploring
+            historic towns, to snowy winters spent on the slopes or sipping hot
+            chocolate by the fire, our adventure holidays in Europe are designed
+            to keep you entertained and captivated, season by season.
+            <br /><br />
+            Stretching from the countries of the former USSR to the Atlantic
+            <b>islands</b> of Iceland and <b>Greenland</b>, Europe is one of the
+            planet’s most beautifully diverse regions on the planet. Explore a
+            new culture, delve into ancient ruins, or make new friends on an
+            action-packed adventure: our trips to Europe let you see and
+            experience it all. <br /><br />
+            Start building your dream trip, with our expert local guides, and
+            choose by destination or type of activity. Whether you want to
+            travel to <b>Italy</b>, <b>Spain</b>, <b>Croatia</b>,
+            <b>Portugal</b> or <b>Greece</b>, each country or region has its own
+            unique offering, and is sure to be an incredible adventure.
+          </p>
+        </div>
+
+        <div class="enquiry__form">
+          <div class="contact__block">
+            <p class="contact__text">Call for general departures:</p>
+            <a class="link contact__tel" href="tel:02039932193">02039932193</a>
+          </div>
+
+          <form class="contact__form" action="#" method="post">
+            <h3 class="heading__tertiary">Make an enquiry</h3>
+            <p class="form__help_text">Step 1 of 2</p>
+            <label class="label" for="dest">DESTINATION</label>
+            <input
+              class="input input__dest"
+              type="text"
+              value="Europe"
+              readonly
+            />
+            <label class="label" for="departure">DEPARTURE DATE</label>
+            <input class="input input__dep" type="date" />
+            <label class="label" for="pass"
+              >NUMBER OF PASSENGERS<span>*</span></label
+            >
+            <select id="pass" class="input">
+              <option value="">Select</option>
+            </select>
+            <label class="label" for="mess">MESSAGE<span>*</span></label>
+            <textarea
+              placeholder="How can we help you?"
+              class="input"
+              rows="4"
+            ></textarea>
+            <p class="helper__text">
+              To enquiry an existingbooking <a href="#">Click here</a>
+            </p>
+            <button class="btn__next input" type="button">NEXT</button>
+            <div class="extra__content">
+              <ion-icon
+                class="icon icon__information"
+                name="information-circle-outline"
+              ></ion-icon>
+              <p>Find out more about how we use your data</p>
+            </div>
+          </form>
+          <div class="btn btn__chat">Live Chat <span>&rarr;</span></div>
+          <div class="btn btn__brochure">
+            Request a Brochure <span>&rarr;</span>
+          </div>
+          <div class="reviewa">
+            <p class="review__text">
+              Our travellers rate our Europe holidays as
+              <strong class="rating">4.6 / 5</strong> based on
+              <span>4811 reviews</span>
+            </p>
+            <div class="stars">
+              <ion-icon class="icon__review" name="star"></ion-icon
+              ><ion-icon class="icon__review" name="star"></ion-icon
+              ><ion-icon class="icon__review" name="star"></ion-icon
+              ><ion-icon class="icon__review" name="star"></ion-icon
+              ><ion-icon class="icon__review" name="star"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
