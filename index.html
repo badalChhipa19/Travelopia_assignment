@@ -111,45 +111,62 @@
                 ></path>
               </svg>
             </div>
+            <input id="abstract__box" type="checkbox" style="display: none" />
             <nav class="header__links_box">
               <ul class="list header__links_list">
                 <li class="item header__link_item">
-                  <a class="link header__link" href="">Destinations</a>
+                  <a class="link header__link" href=""
+                    >Destinations
+                    <span><ion-icon name="chevron-down"></ion-icon></span
+                  ></a>
                 </li>
                 <li class="item header__link_item">
-                  <a class="link header__link" href=""> Activities </a>
+                  <a class="link header__link" href="">
+                    Activities
+                    <span><ion-icon name="chevron-down"></ion-icon></span
+                  ></a>
                 </li>
                 <li class="item header__link_item">
-                  <a class="link header__link" href="">Ways to Travel </a>
+                  <a class="link header__link" href=""
+                    >Ways to Travel
+                    <span><ion-icon name="chevron-down"></ion-icon></span
+                  ></a>
                 </li>
                 <li class="item header__link_item">
-                  <a class="link header__link" href=""> Offers </a>
+                  <a class="link header__link" href="">
+                    Offers <span><ion-icon name="chevron-down"></ion-icon></span
+                  ></a>
                 </li>
                 <li class="item header__link_item">
-                  <a class="link header__link" href="">Late Getaways </a>
+                  <a class="link header__link" href=""
+                    >Late Getaways
+                    <span><ion-icon name="chevron-down"></ion-icon></span
+                  ></a>
                 </li>
                 <li class="item header__link_item">
-                  <a class="link header__link" href="">Sustainable Travel</a>
+                  <a class="link header__link" href=""
+                    >Sustainable Travel
+                    <span><ion-icon name="chevron-down"></ion-icon></span
+                  ></a>
                 </li>
               </ul>
             </nav>
 
-            <nav class="header__action_links">
-              <ion-icon
-                class="icon search__icon"
-                name="search-outline"
-              ></ion-icon>
-              <ion-icon
-                class="icon heart__icon"
-                name="heart-outline"
-              ></ion-icon>
-            </nav>
-
             <nav class="header__extra_links">
+              <div class="header__action_links">
+                <ion-icon
+                  class="icon search__icon"
+                  name="search-outline"
+                ></ion-icon>
+                <ion-icon
+                  class="icon heart__icon"
+                  name="heart-outline"
+                ></ion-icon>
+              </div>
               <a
                 class="link header__extra__link link__tel"
                 href="tel:02039932193"
-                >02039932193
+                ><p>02039932193</p>
                 <ion-icon class="tel__icon" name="call-outline"></ion-icon>
               </a>
               <a class="link header__extra__link link__contact" href=""
@@ -168,6 +185,14 @@
                   ></ion-icon>
                 </div>
                 <ul class="list list__country hidden"></ul>
+              </div>
+              <div class="menu__box">
+                <input
+                  id="abstract__box"
+                  type="checkbox"
+                  style="display: none"
+                />
+                <label for="abstract__box" class="abstract__menu"> </label>
               </div>
             </nav>
           </div>
@@ -298,6 +323,9 @@
             <b>Portugal</b> or <b>Greece</b>, each country or region has its own
             unique offering, and is sure to be an incredible adventure.
           </p>
+
+          <div class="show__more_btn" onclick="toggleContent()">Show More</div>
+          <div class="show__less_btn" onclick="toggleContent()">Show Less</div>
         </div>
 
         <div class="enquiry__form">
